@@ -18,8 +18,8 @@ function Formulario() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/api/bando', formData);
-      console.log('Registro creado:', response.data);
+      const response = await axios.post('http://localhost:4000/api/samurai', formData);
+      console.log('Registro creado:', response.data);  
       // Puedes añadir código para mostrar un mensaje de éxito o redirigir a otra página.
     } catch (error) {
       console.error('Error al crear el registro:', error);
